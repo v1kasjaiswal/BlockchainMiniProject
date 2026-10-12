@@ -1,0 +1,34 @@
+{
+  "name": "blockchainminiproject",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "node node_modules/oxlint/dist/cli.js src",
+    "compile": "node node_modules/hardhat/dist/src/cli.js compile",
+    "node": "node node_modules/hardhat/dist/src/cli.js node",
+    "deploy": "node scripts/deploy.cjs",
+    "demo": "node scripts/demo.cjs"
+  },
+  "dependencies": {
+    "ethers": "^6.17.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "autoprefixer": "^10.6.1",
+    "hardhat": "^3.18.1",
+    "oxlint": "^1.81.0",
+    "postcss": "^8.5.29",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  }
+}
